@@ -6,6 +6,8 @@ int roots (float a, float b, float c, float *x1, float *x2)
 {
 	float d;
 
+	if (a == 0 && b == 0 && c == 0)
+		return 0;
 	if (a == 0)
 	{
 		*x1 = *x2 = -c / b;
