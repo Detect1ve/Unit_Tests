@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include "equation.h"
 
 int roots (float a, float b, float c, float *x1, float *x2)
 {
