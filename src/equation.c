@@ -6,6 +6,11 @@ int roots (float a, float b, float c, float *x1, float *x2)
 {
 	float d;
 
+	if (a == 0)
+	{
+		*x1 = *x2 = -c / b;
+		return 1;
+	}
 	d = b * b - 4 * a * c;
         if (d == 0)
 	{
